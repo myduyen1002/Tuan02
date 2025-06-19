@@ -1,19 +1,28 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    </div>
     <style>
+        .center-cell{
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
         table, th, td {
             border: 2px soild bisque;
             border-radius: 2px ;
+           
         }
         th,td {
             padding-top: 10px;
             padding-bottom: 20px;
             padding-left: 30px;
             padding-right: 40px;
+            justify-content: center;  
         }
         tr:nth-child(odd){
             background-color: aquamarine;
@@ -21,10 +30,13 @@
         tr:nth-child(even){
             background-color: brown;
         }
+        .table{display: flex;justify-content: center;}
     </style>
 </head>
+<h1 style="text-align: center;">Số thứ tự</h1>
+<div class="table">
 <body>
-    <table>
+    <table border="1px">
         <thead>
             <tr>
                 <th>1</th>
@@ -66,4 +78,5 @@
         </tbody>
     </table>
 </body>
+</div>
 </html>
